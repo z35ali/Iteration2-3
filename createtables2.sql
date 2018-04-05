@@ -14,7 +14,8 @@ CREATE TABLE Museum(
   address VARCHAR(80),
   architect VARCHAR(80),
   history VARCHAR(200),
-  famousArt VARCHAR(80)
+  famousArt VARCHAR(80),
+  image VARCHAR(30)
 );
 
 CREATE TABLE Shipping (
@@ -83,12 +84,12 @@ VALUES ('Leonardo Da Vinci','Italy','1452-04-15','1519-05-02','An Italian man wh
 	   ('Jacques-Louis David','France','1748-08-30','1825-12-29','A French man.','Neoclassicism','david.jpg'),
 	   ('Edvard Munch','Oslo','1863-12-12','1944-01-23','A Norwegian man. as well as a printmaker.','Modern Art','munch.jpg');
 
-INSERT INTO Museum (museumName, dateEST, location, address,architect,history,famousArt)
-VALUES ('Louvre','1793','France','75001 Paris, France','Pierre Lescot, Hector Lefuel, Louis Visconti, Louis Le Vau','Originally built as a fortress in the late 12th to 13th century.','Mona Lisa and Venus de Milo'),
-       ('Museum of Modern Art','11-7-1929','New York','11 West 53rd Street','Yoshio Taniguchi, Edward Durell Stone, Philip Goodwin','Holds primary source material related to the history of modern and contemporary art.','The Starry Night and The Persistence of Memory'),
-	   ('Kunsthalle Hamburg','1869-20-08','Hamburg','20095 GlockengieBerwall',' Georg Theodor Schirrmacher and Hermann von der Hude','One of the largest museums in the Germany.','Wanderer above the Sea of Fog and The Sea of Ice'),
-	   ('Chateau de Malmaison','1799','France','92500 Rueil-Malmaison','Charles Percier, Pierre Humbert, Pierre-Francois-Leonard Fontaine','Formerly the residence of Empress Josephine de Beauharnais.','Napolean Crossing the Alps'),
-	   ('Munch Museum','1963','Oslo','Toyengata 53, 0578 Oslo, Norway','Einar Myklebust, Gunnar Fougner','Home to more than half of Edvard Munchs paintings','The Scream');
+INSERT INTO Museum (museumName, dateEST, location, address,architect,history,famousArt,image)
+VALUES ('Louvre','1793','France','75001 Paris, France','Pierre Lescot, Hector Lefuel, Louis Visconti, Louis Le Vau','Originally built as a fortress in the late 12th to 13th century.','Mona Lisa and Venus de Milo','louvre.jpg'),
+       ('Museum of Modern Art','11-7-1929','New York','11 West 53rd Street','Yoshio Taniguchi, Edward Durell Stone, Philip Goodwin','Holds primary source material related to the history of modern and contemporary art.','The Starry Night and The Persistence of Memory','moma.jpg'),
+	   ('Kunsthalle Hamburg','1869-20-08','Hamburg','20095 GlockengieBerwall',' Georg Theodor Schirrmacher and Hermann von der Hude','One of the largest museums in the Germany.','Wanderer above the Sea of Fog and The Sea of Ice','kh.jpg'),
+	   ('Chateau de Malmaison','1799','France','92500 Rueil-Malmaison','Charles Percier, Pierre Humbert, Pierre-Francois-Leonard Fontaine','Formerly the residence of Empress Josephine de Beauharnais.','Napolean Crossing the Alps','cdm.jpg'),
+	   ('Munch Museum','1963','Oslo','Toyengata 53, 0578 Oslo, Norway','Einar Myklebust, Gunnar Fougner','Home to more than half of Edvard Munchs paintings','The Scream','munchmus.jpg');
 	   
 INSERT INTO Artwork (artName, description, paintType, creationDate, dimensions, location, price, artist, genre, museum, image)
 VALUES ('Mona Lisa','The famous painting of a woman.','Oil','1503','77cm by 53cm','Louvre','100','Leonardo Da Vinci','Portrait','Louvre','mona.jpg'),
