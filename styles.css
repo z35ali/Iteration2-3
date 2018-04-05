@@ -1,0 +1,48 @@
+/*Styling for small image and info windows
+  that appear when dropdown item is selected*/
+.imagePaneSmall{
+	padding: 0px;
+   right:-38%;
+ border-style: none;
+  height: 250px;
+  width: 250px;
+}
+
+.infoPaneSmall{
+
+  left:50%;
+  border-style: none;
+  height: 250px;
+  width: 350px;
+}
+
+/*Styling for large windows that appear when
+  the name of an art piece or artist is selected */
+.imagePaneLarge{
+display:none;
+padding: 0px;
+ left:0%;
+ border-style: none;
+  height: 500px;
+  width: 500px;
+}
+
+.infoPaneLarge{
+display:none;
+right:-10%;
+ border-style: solid;
+  height: 500px;
+  width: 500px;
+}
+
+.small{
+	width: 250px;
+	height: 250px;
+}
+
+.large{
+	width: 500px;
+	height: 500px;
+
+	
+}
