@@ -1,22 +1,10 @@
 <?php
 include 'header.php';
-include 'shopping.php';
 
 
 
 
-$servername = "localhost";
-$username = "a2korac";
-$password = "wijTydBy";
-$dbname = "a2korac";
 
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 echo "<form action='artist.php' method='post'>";
 echo 'Artists: <select name="artists" style="width: 150px;">
   <option value="" selected disabled hidden>Choose an Artist</option>';
@@ -27,7 +15,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<option value=".$row["artistID"].">". $row["name"]. "</option>";
-		
+
 		// echo <option $row["artistID"];
     }
 } else {
@@ -50,7 +38,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<option value=".$row["artWorkID"].">". $row["artName"]. "</option>";
-		
+
 		// echo <option $row["artistID"];
     }
 } else {
@@ -74,7 +62,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "<option value=".$row["museumID"].">". $row["museumName"]. "</option>";
-		
+
 		// echo <option $row["artistID"];
     }
 } else {
@@ -83,6 +71,7 @@ if ($result->num_rows > 0) {
 echo '</select>';
 echo "<input type='submit' name='submit'/>";
 echo "</form>";
+
 
 
 echo '<!--These are the divs for the large boxes when clicking on an artwork or artist, info is added into these divs by javascript -->
@@ -114,7 +103,17 @@ echo '<!--These are the divs for the large boxes when clicking on an artwork or 
     <div class="col-md-6 infoPaneSmall" id="infoSmall">
 
     </div>
-  </div>
-</div>';
+	
+	 </div>
+  
+	 <!--search div -->
+    <div class="col-md-6 searchPane" id="search">
+
+    </div>
+	
+
+</div>
+ 
+';
 
 ?>

@@ -15,7 +15,6 @@
   height: 250px;
   width: 350px;
 }
-
 /*Styling for large windows that appear when
   the name of an art piece or artist is selected */
 .imagePaneLarge{
@@ -34,6 +33,14 @@ right:-10%;
   height: 500px;
   width: 500px;
 }
+.searchPane{
+display:none;
+left: 90%;
+ border-style: solid;
+  height: 500px;
+  width: 500px;
+}
+
 
 .small{
 	width: 250px;

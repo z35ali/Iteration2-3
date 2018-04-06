@@ -57,11 +57,7 @@ CREATE TABLE Invoice (
 	price DECIMAL (10, 2) UNSIGNED,
 	tax DECIMAL(10, 2) UNSIGNED,
 	shippingCost DECIMAL(6, 2) UNSIGNED,
-	totalPrice DECIMAL(15, 2) UNSIGNED,
-	artWorkID INT(6) UNSIGNED,
-	shippingID INT(6) UNSIGNED,
-	FOREIGN KEY (artWorkID) REFERENCES Artwork(artWorkID),
-	FOREIGN KEY (shippingID) REFERENCES Shipping(shippingID)
+	totalPrice DECIMAL(15, 2) UNSIGNED
 );
 
 CREATE TABLE Review (
@@ -96,4 +92,4 @@ VALUES ('Mona Lisa','The famous painting of a woman.','Oil','1503','77cm by 53cm
        ('The Starry Night','A depiction of Van Goghas window view from his asylum','Oil','1889','74cm by 92cm','Museum of Modern Art','150','Vincent Van Gogh','Landscape Painting','Museum of Modern Art','starry.jpg'),
        ('Wanderer Above the Sea of Fog','Depicts a figure standing atop a cliff above a foggy expanse','Oil','1818','95cm by 75cm','Kunsthalle Hamburg','200','Caspar David Friedrich','Romanticism','Kunsthalle Hamburg','wanderer.jpg'),
        ('Napoleon Crossing the Alps','Depicts Napoleon crossing the Alps atop his horse','Oil','1801','2.6m by 2.21m','Chateau de Malmaison','180','Jacques-Louis David','Romanticism','Chateau de Malmaison','alps.jpg'),
-       ('The Scream','A figure in agony against an orange sky','Oil, tempera, pastel, crayon','1893','91cm by 73.5cm','National Gallery (Oslo)','100','Edvard Munch','Modern','Munch Museum','scream.jpg');
+('The Scream','A figure in agony against an orange sky','Oil, tempera, pastel, crayon','1893','91cm by 73.5cm','National Gallery (Oslo)','100','Edvard Munch','Modern','Munch Museum','scream.jpg');

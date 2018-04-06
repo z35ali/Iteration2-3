@@ -1,4 +1,5 @@
 <?php
+
 include "header.php";
 $servername = "localhost";
 $username = "a2korac";
@@ -12,33 +13,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-$artWorkID= $_POST['shopping1'];
-$shippingCost= $_POST['shippingCost'];
-$quantity= $_POST['quantity'];
-
-
-
-$sql1 = "SELECT * from Artwork where artWorkID=".$artWorkID;
-			$result = $conn->query($sql1);
-
-			if ($result->num_rows > 0) {
-				// output data of each row
-				while($row = $result->fetch_assoc()) {
-				   $price= $row["price"];
-				   $artName=$row["artName"];
-					
-
-}
-}
-$tax=($price*$quantity)*0.13;
-$totalPrice=$tax+$price+$shippingCost;
-
-
-$sql2 = "INSERT INTO Invoice(artName,quantity, price, tax, shippingCost,totalPrice)
-			VALUES ('$artName','$quantity','$price','$tax','$shippingCost','$totalPrice');";
-			$result = $conn->query($sql2);
-			
+	
 			echo"<style>
 			table {
     font-family: arial, sans-serif;
@@ -93,5 +68,24 @@ tr:nth-child(even) {
 				}
 	
 echo "</table>";
+
+echo "<form  action=invoiceRemove.php method='post'>";
+echo "<br><b>DELETE FROM TABLE</b><br><br>";
+echo 'Invoice: <select name="invoice" style="width: 150px;">
+  <option value="" selected disabled hidden>Choose an Invoice</option>';
+$sql1 = "SELECT * FROM Invoice";
+$conn->query($sql1);
+$result = $conn->query($sql1);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<option value=".$row["invoiceID"].">". $row["artName"]. "</option>";
+    }
+} else {
+    echo "0 results";
+}
+echo '</select><br>';
+echo "<input type='submit' name='submit'/>";
+echo "</form>";
 
 ?>
