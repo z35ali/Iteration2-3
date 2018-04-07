@@ -3,7 +3,7 @@
 include 'maintain.php';
 
 
-echo "<br><br><br><br>";
+echo "<br><br>Artwork was selected<br><br>";
 echo "<form action=artworkAdd.php method='post'>";
 echo "<b>INSERT TO TABLE</b> <br><br>";
 echo "Artwork name: <input type='text' name='artName'><br>

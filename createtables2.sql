@@ -82,8 +82,8 @@ VALUES ('Leonardo Da Vinci','Italy','1452-04-15','1519-05-02','An Italian man wh
 
 INSERT INTO Museum (museumName, dateEST, location, address,architect,history,famousArt,image)
 VALUES ('Louvre','1793','France','75001 Paris, France','Pierre Lescot, Hector Lefuel, Louis Visconti, Louis Le Vau','Originally built as a fortress in the late 12th to 13th century.','Mona Lisa and Venus de Milo','louvre.jpg'),
-       ('Museum of Modern Art','11-7-1929','New York','11 West 53rd Street','Yoshio Taniguchi, Edward Durell Stone, Philip Goodwin','Holds primary source material related to the history of modern and contemporary art.','The Starry Night and The Persistence of Memory','moma.jpg'),
-	   ('Kunsthalle Hamburg','1869-20-08','Hamburg','20095 GlockengieBerwall',' Georg Theodor Schirrmacher and Hermann von der Hude','One of the largest museums in the Germany.','Wanderer above the Sea of Fog and The Sea of Ice','kh.jpg'),
+       ('Museum of Modern Art','1929-11-7','New York','11 West 53rd Street','Yoshio Taniguchi, Edward Durell Stone, Philip Goodwin','Holds primary source material related to the history of modern and contemporary art.','The Starry Night and The Persistence of Memory','moma.jpg'),
+	   ('Kunsthalle Hamburg','1869-08-20','Hamburg','20095 GlockengieBerwall',' Georg Theodor Schirrmacher and Hermann von der Hude','One of the largest museums in the Germany.','Wanderer above the Sea of Fog and The Sea of Ice','kh.jpg'),
 	   ('Chateau de Malmaison','1799','France','92500 Rueil-Malmaison','Charles Percier, Pierre Humbert, Pierre-Francois-Leonard Fontaine','Formerly the residence of Empress Josephine de Beauharnais.','Napolean Crossing the Alps','cdm.jpg'),
 	   ('Munch Museum','1963','Oslo','Toyengata 53, 0578 Oslo, Norway','Einar Myklebust, Gunnar Fougner','Home to more than half of Edvard Munchs paintings','The Scream','munchmus.jpg');
 	   
@@ -92,4 +92,4 @@ VALUES ('Mona Lisa','The famous painting of a woman.','Oil','1503','77cm by 53cm
        ('The Starry Night','A depiction of Van Goghas window view from his asylum','Oil','1889','74cm by 92cm','Museum of Modern Art','150','Vincent Van Gogh','Landscape Painting','Museum of Modern Art','starry.jpg'),
        ('Wanderer Above the Sea of Fog','Depicts a figure standing atop a cliff above a foggy expanse','Oil','1818','95cm by 75cm','Kunsthalle Hamburg','200','Caspar David Friedrich','Romanticism','Kunsthalle Hamburg','wanderer.jpg'),
        ('Napoleon Crossing the Alps','Depicts Napoleon crossing the Alps atop his horse','Oil','1801','2.6m by 2.21m','Chateau de Malmaison','180','Jacques-Louis David','Romanticism','Chateau de Malmaison','alps.jpg'),
-('The Scream','A figure in agony against an orange sky','Oil, tempera, pastel, crayon','1893','91cm by 73.5cm','National Gallery (Oslo)','100','Edvard Munch','Modern','Munch Museum','scream.jpg');
+('The Scream','A figure in agony against an orange sky','Oil, tempera, pastel, crayon','1893','91cm by 73.5cm','Munch Museum','100','Edvard Munch','Modern','Munch Museum','scream.jpg');

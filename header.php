@@ -26,7 +26,7 @@ echo "
 <nav class='navbar navbar-default'>
   <div class='container-fluid'>
     <div class='navbar-header'>
-      <a href='#' class='navbar-brand'>Art Store</a>
+      <a href='index.php' class='navbar-brand'>Art Store</a>
     </div>
     <ul class='nav navbar-nav'>
       <li><a href='index.php'>Home</a></li>

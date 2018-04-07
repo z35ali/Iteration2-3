@@ -31,7 +31,7 @@
 		document.getElementById('imgLarge').style.display='none';
 		document.getElementById('infoLarge').style.display='none';
 		document.getElementById('infoSmall').innerHTML='Name: <a href=javascript:bigArt();>$name </a> <br> Description: $description';
-		document.getElementById('imgSmall').innerHTML='<img src=./images/$image class=small>';
+		document.getElementById('imgSmall').innerHTML='<img src=./images/$image class=small  alt=NoImage>  ';
 		
 		
 		
@@ -51,7 +51,7 @@
 	document.getElementById('imgLarge').style.display='block';
 	document.getElementById('infoLarge').style.display='block';
 	document.getElementById('infoLarge').innerHTML='Name: $name <br> Description: $description <br> PaintType: $paintType <br> Creation Date: $creationDate <br> Dimensions: $dimensions <br> Location: $location <br> Price: $price <br> Artist: $artist <br>  Genre: $genre <br> Museum: $museum';
-	document.getElementById('imgLarge').innerHTML='<img src=./images/$image class=large>';
+	document.getElementById('imgLarge').innerHTML='<img src=./images/$image class=large  alt=NoImage> ';
 		
 		}
 		

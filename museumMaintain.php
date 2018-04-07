@@ -3,7 +3,7 @@
 include 'maintain.php';
 
 
-echo "<br><br><br><br>";
+echo "<br><br>Museum was selected<br><br>";
 echo "<form action=museumAdd.php method='post'>";
 echo "<b>INSERT TO TABLE</b> <br><br>";
 echo "Museum name: <input type='text' name='museumName'><br>

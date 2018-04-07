@@ -32,7 +32,7 @@ $sql1 = "SELECT * from Artwork where artWorkID=".$artWorkID;
 }
 }
 $tax=($price*$quantity)*0.13;
-$totalPrice=$tax+$price+$shippingCost;
+$totalPrice=$tax+$price*$quantity+$shippingCost;
 
 
 $sql2 = "INSERT INTO Invoice(artName,quantity, price, tax, shippingCost,totalPrice)
